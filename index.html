@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #map {
+        width: 100%;
+        height: 400px;
+        background-color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>MY GOOGLE MAPS DEMO</h3>
+    <!--The div element for the map-->
+    <div id="map"></div>
+
+    <!-- checkboxes -->
+    <div id="legend">
+      
+      <h3>Marker Legend</h3>
+      <div>
+        <span class="marker-type-a"></span>
+        <label>Type A</label>
+        <div>
+          <input type="checkbox" id="show-marker-type-a" checked="checked" />
+          <label for="show-marker-type-a">Show/Hide Type A Markers</label>
+        </div>
+      </div>
+      <div>
+        <span class="marker-type-b"></span>
+        <label>Type B</label>
+      </div>
+      <div>
+        <input type="checkbox" id="show-marker-type-b" checked="checked" />
+        <label for="show-marker-type-b">Show/Hide Type B Markers</label>
+      </div>
+      <div>
+        <div>
+          <span class="marker-type-c"></span>
+          <label>Type C</label>
+        </div>
+      </div>
+      <input type="checkbox" id="show-marker-type-c" checked="checked" />
+      <label for="show-marker-type-c">Show/Hide Type C Markers</label>
+    </div>
+    <script src="./script.js"></script>
+    <script
+      asyync
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqOHKR8535QEk3fKeA2_zqP_zz7tp0tcU&callback=initMap"
+    ></script>
+  </body>
+</html>
+<!-- // API Key -->
+<!-- AIzaSyAwNGP1MqHlEzQxoGQHEQ4KkQUh6VfhxZMF -->
+<!-- let Buldi = {  {ParseDMS(num.longi)}, {ParseDMS(num.lati)} }; -->
